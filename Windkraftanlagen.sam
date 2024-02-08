@@ -1,0 +1,86 @@
+{
+  "SAModels": {
+    "Info": {
+      "ModelNames": [
+        "Neues Eignungsmodell"
+      ],
+      "ModelTypes": [
+        "Suitability"
+      ]
+    },
+    "Neues Eignungsmodell": {
+      "General": {
+        "Version": "2.0",
+        "ModelName": "Neues Eignungsmodell",
+        "ModelType": "Suitability",
+        "CreateDate": "16.09.2023 08:18:05",
+        "ModifyDate": "16.09.2023 08:18:05",
+        "CriterionCount": 0,
+        "QueryCount": 0
+      },
+      "Control": {
+        "WeightByIndex": 0,
+        "ScaleIndex": 4,
+        "OutRaster": "",
+        "SummaryReport": ""
+      },
+      "Suitability": {
+        "CriteriaNames": [],
+        "XformNames": [],
+        "CriteriaURIs": [],
+        "TransformURIs": [],
+        "XmlDataConns": [],
+        "XmlXfmConns": [],
+        "WeightValues": [],
+        "MinWeights": [],
+        "MaxWeights": [],
+        "IsSelected": [],
+        "TransformCategory": [],
+        "TransformParameters": [],
+        "FromScale": 1.0,
+        "ToScale": 10.0
+      },
+      "Query": {
+        "QueryLayerName": [],
+        "QueryLayerXml": []
+      },
+      "Locate": {
+        "TotalArea": "",
+        "AreaUnits": "",
+        "OutRegionRaster": "",
+        "RegionCount": "",
+        "RegionShape": "",
+        "TradeOffPct": "",
+        "EvalMethod": "",
+        "RegionMinArea": "",
+        "RegionMaxArea": "",
+        "MaxDistBetRegions": "",
+        "MinDistBetRegions": "",
+        "DistanceUnits": "",
+        "ExistingRegions": "",
+        "NeighborGrowth": "",
+        "IslandsAllowed": "",
+        "SeedCount": "",
+        "ResolutionGrowth": "",
+        "SelectionMethod": ""
+      },
+      "Environments": {
+        "workspace": "",
+        "scratchWorkspace": ""
+      },
+      "SuitabilityEnvironments": {
+        "extent": "DEFAULT",
+        "cellSize": "MAXOF"
+      },
+      "LocateEnvironments": {
+        "extent": "DEFAULT",
+        "cellSize": "MAXOF"
+      },
+      "SourcesDataGroups": {
+        "LocalDataParams": [],
+        "ServiceDataParams": [],
+        "NoXFMDataParams": []
+      }
+    }
+  }
+}
