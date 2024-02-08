@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Startzeit: Sonntag, 17. September 2023 01:29:53</msg><msg code="0" type="0">json:
+{"element": "h5", "data": "Erste Datenbewertung"}</msg><msg code="0" type="0">Es wird überprüft, ob ausreichend gewichtete Features für die Analyse vorhanden sind....</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["Es gibt 44255 g\u00fcltige Eingabe-Features."]}</msg><msg code="0" type="0">Das benutzerdefinierte Analysefeld wird ausgewertet....</msg><msg code="0" type="0">json:
+[{"element": "table", "data": [["Min", "31393,4971"], ["Max", "1398288530,6422"], ["Mittelwert", "1427201,5206"], ["Std.Abw.", "8193411,9894"]], "elementProps": {"striped": "true", "className": "small", "noHeader": true, "title": "Eigenschaften von SHAPE_AREA:", "0": {"align": "left", "pad": "0px", "wrap": true}, "1": {"align": "right", "pad": "0px", "wrap": true}}}]</msg><msg code="0" type="0">Positions-Ausreißer werden gesucht....</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["Es waren 614 Ausrei\u00dfer-Positionen vorhanden; diese werden nicht zum Berechnen von das optimale feste Entfernungsband herangezogen."]}</msg><msg code="0" type="0">json:
+{"element": "h5", "data": "Analysema\u00dfstab"}</msg><msg code="0" type="0">Es wird nach einem optimalen Analysemaßstab gesucht, indem die Intensität der Cluster-Bildung bei zunehmenden Entfernungen bewertet wird....</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["Das optimale feste Entfernungsband basiert auf der an 3830,3017 Meters gefundenen Spitzen-Cluster-Bildung"]}</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["Features ohne Nachbarn mit dieser Entfernung wurden angepasst, um deren n\u00e4chste Nachbarn einzubeziehen."]}</msg><msg code="0" type="0">json:
+{"element": "h5", "data": "Optimierte Ausrei\u00dferanalyse"}</msg><msg code="852" type="100">ERROR 000852: Feld LMiIndex kann nicht zu C:\Users\kaan\Desktop\Windkraftanlagen\Windkraftanlagen.gdb\UnmöglicheStandorteMerge_OptimizedOutlierAnalysis hinzugefügt werden.</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["Die Zufallsreferenzverteilung mit 499 Permutationen wird erstellt...."]}</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["Statistisch signifikante Ausrei\u00dfer mit hohen und niedrigen SHAPE_AREA-Werten werden gesucht...."]}</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["3878 Ausgabe-Features sind auf Grundlage einer FDR-Korrektur f\u00fcr Mehrfachtests und r\u00e4umliche Abh\u00e4ngigkeit statistisch signifikant."]}</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["Es sind 514 statistisch signifikante hohe Ausrei\u00dfer-Features vorhanden."]}</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["Es sind 43 statistisch signifikante niedrige Ausrei\u00dfer-Features vorhanden."]}</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["Es sind 3272 Features vorhanden, die Teil statistisch signifikanter niedriger Cluster sind."]}</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["Es sind 49 Features vorhanden, die Teil statistisch signifikanter hoher Cluster sind."]}</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["1,5% der Features wiesen weniger als 8 Nachbarn basierend auf dem Entfernungsband von 3830,3017 Meters auf."]}</msg><msg code="0" type="0">json:
+{"element": "h5", "data": "Ausgabe"}</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["Rosafarbene Ausgabe-Features sind Teil eines Clusters mit hohen SHAPE_AREA-Werten."]}</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["Hellblaue Ausgabe-Features sind Teil eines Clusters mit niedrigen SHAPE_AREA-Werten."]}</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["Rote Ausgabe-Features stellen hohe Ausrei\u00dfer in einem Cluster mit niedrigen SHAPE_AREA-Werten dar."]}</msg><msg code="0" type="0">json:
+{"element": "unorderedlist", "data": ["Blaue Ausgabe-Features stellen niedrige Ausrei\u00dfer in einem Cluster mit hohen SHAPE_AREA-Werten dar."]}</msg><msg code="0" type="0"></msg><msg code="-2147467259" type="100">Fehler beim Ausführen von (OptimizedOutlierAnalysis).</msg><msg code="0" type="3">Fehlgeschlagen am Sonntag, 17. September 2023 01:35:24 (Verstrichene Zeit: 5 Minuten 30 Sekunden)</msg></messages>
