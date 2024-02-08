@@ -1,0 +1,5 @@
+Has_error, Identifier, Message, Base_value, Test_value, ObjectID
+"true", "Feld", "Field OBJECTID aliases are different", "OBJECTID", "FID", -1
+"true", "Feld", "Field SUM_Shape_Area aliases are different", "SUM_Shape_Area", "SUM_Shape__Area", -1
+"false", "Tabelle", "Tabellen haben gleiche Anzahl an Feldern", " ", " ", -1
+"false", "Tabelle", "Anzahl an Tabellenzeilen ist identisch", " ", " ", -1
