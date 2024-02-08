@@ -1,0 +1,390 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "3.1.0",
+  "build" : 41833,
+  "layers" : [
+    "CIMPATH=karte/energie_atlas_bayern__bayerischer_windatlas_2021.json"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMWMSLayer",
+      "name" : "Energie-Atlas Bayern: Bayerischer Windatlas 2021",
+      "uRI" : "CIMPATH=karte/energie_atlas_bayern__bayerischer_windatlas_2021.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "metadataURI" : "CIMPATH=Metadata/3183405a7db15296623ccb77051bd368.xml",
+      "useSourceMetadata" : true,
+      "description" : "Bayerischer Windatlas - Neuauflage 2021",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "elevationSurfaceLayerURI" : "CIMPATH=karte/boden.json"
+      },
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "None",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "serviceConnection" : {
+        "type" : "CIMWMSServiceConnection",
+        "version" : "1.3.0",
+        "serverConnection" : {
+          "type" : "CIMProjectServerConnection",
+          "anonymous" : true,
+          "hideUserProperty" : true,
+          "url" : "https://www.lfu.bayern.de/gdi/wms/energieatlas/windatlas2021?",
+          "connectionMode" : "Consumer",
+          "serverType" : "WMS",
+          "useDefaultStagingFolder" : true
+        },
+        "capabilitiesParameters" : {
+          "type" : "PropertySet",
+          "propertySetItems" : [
+          ]
+        }
+      },
+      "subLayers" : [
+        {
+          "type" : "CIMServiceCompositeSubLayer",
+          "description" : "Bayerischer Windatlas - Neuauflage 2021",
+          "expanded" : true,
+          "name" : "Windatlas",
+          "showLegends" : true,
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "subLayers" : [
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der durchschnittlichen Windgeschwindigkeiten in 10 m Höhe über Grund als Mittelwert von 2001 bis 2020 in einer Auflösung von 10 x 10 m.",
+              "name" : "Mittlere Windgeschwindigkeit in 10 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "windgeschwindigkeit_10m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der durchschnittlichen Windgeschwindigkeiten in 100 m Höhe über Grund als Mittelwert von 2001 bis 2020 in einer Auflösung von 10 x 10 m.",
+              "name" : "Mittlere Windgeschwindigkeit in 100 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "windgeschwindigkeit_100m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der durchschnittlichen Windgeschwindigkeiten in 120 m Höhe über Grund als Mittelwert von 2001 bis 2020 in einer Auflösung von 10 x 10 m.",
+              "name" : "Mittlere Windgeschwindigkeit in 120 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "windgeschwindigkeit_120m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der durchschnittlichen Windgeschwindigkeiten in 140 m Höhe über Grund als Mittelwert von 2001 bis 2020 in einer Auflösung von 10 x 10 m.",
+              "expanded" : true,
+              "name" : "Mittlere Windgeschwindigkeit in 140 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "windgeschwindigkeit_140m",
+              "visibility" : true,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der durchschnittlichen Windgeschwindigkeiten in 160 m Höhe über Grund als Mittelwert von 2001 bis 2020 in einer Auflösung von 10 x 10 m.",
+              "name" : "Mittlere Windgeschwindigkeit in 160 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "windgeschwindigkeit_160m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der durchschnittlichen Windgeschwindigkeiten in 180 m Höhe über Grund als Mittelwert von 2001 bis 2020 in einer Auflösung von 10 x 10 m.",
+              "name" : "Mittlere Windgeschwindigkeit in 180 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "windgeschwindigkeit_180m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der durchschnittlichen Windgeschwindigkeiten in 200 m Höhe über Grund als Mittelwert von 2001 bis 2020 in einer Auflösung von 10 x 10 m.",
+              "name" : "Mittlere Windgeschwindigkeit in 200 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "windgeschwindigkeit_200m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der gekappten mittleren Windleistungsdichte in 100 m Höhe über Grund. Der Kappungswert liegt bei 15 m/s. Die mittlere Windleistungsdichte setzt sich aus den an einem Standort auftretenden Windgeschwindigkeiten in der entsprechenden Häufigkeit sowie der Luftdichte zusammen.",
+              "name" : "Gekappte mittlere Windleistungsdichte in 100 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "mitt_windleistdichte_100m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der gekappten mittleren Windleistungsdichte in 120 m Höhe über Grund. Der Kappungswert liegt bei 15 m/s. Die mittlere Windleistungsdichte setzt sich aus den an einem Standort auftretenden Windgeschwindigkeiten in der entsprechenden Häufigkeit sowie der Luftdichte zusammen.",
+              "name" : "Gekappte mittlere Windleistungsdichte in 120 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "mitt_windleistdichte_120m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der gekappten mittleren Windleistungsdichte in 140 m Höhe über Grund. Der Kappungswert liegt bei 15 m/s. Die mittlere Windleistungsdichte setzt sich aus den an einem Standort auftretenden Windgeschwindigkeiten in der entsprechenden Häufigkeit sowie der Luftdichte zusammen.",
+              "name" : "Gekappte mittlere Windleistungsdichte in 140 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "mitt_windleistdichte_140m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der gekappten mittleren Windleistungsdichte in 160 m Höhe über Grund. Der Kappungswert liegt bei 15 m/s. Die mittlere Windleistungsdichte setzt sich aus den an einem Standort auftretenden Windgeschwindigkeiten in der entsprechenden Häufigkeit sowie der Luftdichte zusammen.",
+              "name" : "Gekappte mittlere Windleistungsdichte in 160 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "mitt_windleistdichte_160m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der gekappten mittleren Windleistungsdichte in 180 m Höhe über Grund. Der Kappungswert liegt bei 15 m/s. Die mittlere Windleistungsdichte setzt sich aus den an einem Standort auftretenden Windgeschwindigkeiten in der entsprechenden Häufigkeit sowie der Luftdichte zusammen.",
+              "name" : "Gekappte mittlere Windleistungsdichte in 180 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "mitt_windleistdichte_180m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der gekappten mittleren Windleistungsdichte in 200 m Höhe über Grund. Der Kappungswert liegt bei 15 m/s. Die mittlere Windleistungsdichte setzt sich aus den an einem Standort auftretenden Windgeschwindigkeiten in der entsprechenden Häufigkeit sowie der Luftdichte zusammen.",
+              "name" : "Gekappte mittlere Windleistungsdichte in 200 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "mitt_windleistdichte_200m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte des Standortertrags für eine fiktive Windenergieanlage (WEA) mit Rotordurchmesser von 148 m und Nennleistung von 5 MW in 100 m Höhe über Grund. Die Leistungskurve von WEA weist nur einen bestimmten Gültigkeitsbereich von relevanten Windparametern, wie u. a. Turbulenzintensität, Schräganströmung und Windscherung auf. In der Realität werden diese Gültigkeitsbereiche jedoch an vielen Standorten überschritten. So treten besonders bei Waldstandorten oder zu dichter Platzierung von WEA erhöhte Turbulenzen auf. Daher ist bei der Verwendung des Standortertrages ein pauschaler Abzug von ca. 6 % zu empfehlen.",
+              "name" : "Standortertrag in 100 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "mitt_standortertrag_wind_100m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte des Standortertrags für eine fiktive Windenergieanlage (WEA) mit Rotordurchmesser von 148 m und Nennleistung von 5 MW in 120 m Höhe über Grund. Die Leistungskurve von WEA weist nur einen bestimmten Gültigkeitsbereich von relevanten Windparametern, wie u. a. Turbulenzintensität, Schräganströmung und Windscherung auf. In der Realität werden diese Gültigkeitsbereiche jedoch an vielen Standorten überschritten. So treten besonders bei Waldstandorten oder zu dichter Platzierung von WEA erhöhte Turbulenzen auf. Daher ist bei der Verwendung des Standortertrages ein pauschaler Abzug von ca. 6 % zu empfehlen.",
+              "name" : "Standortertrag in 120 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "mitt_standortertrag_wind_120m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte des Standortertrags für eine fiktive Windenergieanlage (WEA) mit Rotordurchmesser von 148 m und Nennleistung von 5 MW in 140 m Höhe über Grund. Die Leistungskurve von WEA weist nur einen bestimmten Gültigkeitsbereich von relevanten Windparametern, wie u. a. Turbulenzintensität, Schräganströmung und Windscherung auf. In der Realität werden diese Gültigkeitsbereiche jedoch an vielen Standorten überschritten. So treten besonders bei Waldstandorten oder zu dichter Platzierung von WEA erhöhte Turbulenzen auf. Daher ist bei der Verwendung des Standortertrages ein pauschaler Abzug von ca. 6 % zu empfehlen.",
+              "name" : "Standortertrag in 140 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "mitt_standortertrag_wind_140m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte des Standortertrags für eine fiktive Windenergieanlage (WEA) mit Rotordurchmesser von 148 m und Nennleistung von 5 MW in 160 m Höhe über Grund. Die Leistungskurve von WEA weist nur einen bestimmten Gültigkeitsbereich von relevanten Windparametern, wie u. a. Turbulenzintensität, Schräganströmung und Windscherung auf. In der Realität werden diese Gültigkeitsbereiche jedoch an vielen Standorten überschritten. So treten besonders bei Waldstandorten oder zu dichter Platzierung von WEA erhöhte Turbulenzen auf. Daher ist bei der Verwendung des Standortertrages ein pauschaler Abzug von ca. 6 % zu empfehlen.",
+              "name" : "Standortertrag in 160 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "mitt_standortertrag_wind_160m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte des Standortertrags für eine fiktive Windenergieanlage (WEA) mit Rotordurchmesser von 148 m und Nennleistung von 5 MW in 180 m Höhe über Grund. Die Leistungskurve von WEA weist nur einen bestimmten Gültigkeitsbereich von relevanten Windparametern, wie u. a. Turbulenzintensität, Schräganströmung und Windscherung auf. In der Realität werden diese Gültigkeitsbereiche jedoch an vielen Standorten überschritten. So treten besonders bei Waldstandorten oder zu dichter Platzierung von WEA erhöhte Turbulenzen auf. Daher ist bei der Verwendung des Standortertrages ein pauschaler Abzug von ca. 6 % zu empfehlen.",
+              "name" : "Standortertrag in 180 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "mitt_standortertrag_wind_180m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte des Standortertrags für eine fiktive Windenergieanlage (WEA) mit Rotordurchmesser von 148 m und Nennleistung von 5 MW in 200 m Höhe über Grund. Die Leistungskurve von WEA weist nur einen bestimmten Gültigkeitsbereich von relevanten Windparametern, wie u. a. Turbulenzintensität, Schräganströmung und Windscherung auf. In der Realität werden diese Gültigkeitsbereiche jedoch an vielen Standorten überschritten. So treten besonders bei Waldstandorten oder zu dichter Platzierung von WEA erhöhte Turbulenzen auf. Daher ist bei der Verwendung des Standortertrages ein pauschaler Abzug von ca. 6 % zu empfehlen.",
+              "name" : "Standortertrag in 200 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "mitt_standortertrag_wind_200m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der Standortgüte für eine fiktive Windenergieanlage (WEA) mit Rotordurchmesser von 148 m und Nennleistung von 5 MW in 100 m Höhe über Grund. Die Standortgüte wird aus dem Standortertrag und dem Referenzertrag für eine WEA bestimmt. Der Referenzertrag ist der Ertrag am sog. Referenzstandort, der im EEG 2017 festgelegt ist.",
+              "name" : "Standortgüte in 100 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "standortguete_wind_100m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der Standortgüte für eine fiktive Windenergieanlage (WEA) mit Rotordurchmesser von 148 m und Nennleistung von 5 MW in 120 m Höhe über Grund. Die Standortgüte wird aus dem Standortertrag und dem Referenzertrag für eine WEA bestimmt. Der Referenzertrag ist der Ertrag am sog. Referenzstandort, der im EEG 2017 festgelegt ist.",
+              "name" : "Standortgüte in 120 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "standortguete_wind_120m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der Standortgüte für eine fiktive Windenergieanlage (WEA) mit Rotordurchmesser von 148 m und Nennleistung von 5 MW in 140 m Höhe über Grund. Die Standortgüte wird aus dem Standortertrag und dem Referenzertrag für eine WEA bestimmt. Der Referenzertrag ist der Ertrag am sog. Referenzstandort, der im EEG 2017 festgelegt ist.",
+              "name" : "Standortgüte in 140 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "standortguete_wind_140m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der Standortgüte für eine fiktive Windenergieanlage (WEA) mit Rotordurchmesser von 148 m und Nennleistung von 5 MW in 160 m Höhe über Grund. Die Standortgüte wird aus dem Standortertrag und dem Referenzertrag für eine WEA bestimmt. Der Referenzertrag ist der Ertrag am sog. Referenzstandort, der im EEG 2017 festgelegt ist.",
+              "name" : "Standortgüte in 160 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "standortguete_wind_160m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der Standortgüte für eine fiktive Windenergieanlage (WEA) mit Rotordurchmesser von 148 m und Nennleistung von 5 MW in 180 m Höhe über Grund. Die Standortgüte wird aus dem Standortertrag und dem Referenzertrag für eine WEA bestimmt. Der Referenzertrag ist der Ertrag am sog. Referenzstandort, der im EEG 2017 festgelegt ist.",
+              "name" : "Standortgüte in 180 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "standortguete_wind_180m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der Standortgüte für eine fiktive Windenergieanlage (WEA) mit Rotordurchmesser von 148 m und Nennleistung von 5 MW in 200 m Höhe über Grund. Die Standortgüte wird aus dem Standortertrag und dem Referenzertrag für eine WEA bestimmt. Der Referenzertrag ist der Ertrag am sog. Referenzstandort, der im EEG 2017 festgelegt ist.",
+              "name" : "Standortgüte in 200 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "standortguete_wind_200m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der mittleren Turbulenzintensität in 100 m Höhe über Grund. Die mittlere Turbulenzintensität beschreibt den Strömungszustand der Luft, der durch die Entstehung und den Zerfall von Wirbeln gekennzeichnet ist. Sie wird in Prozent angegeben und bezieht sich immer auf die mittlere Windgeschwindigkeit am Standort.",
+              "name" : "Mittlere Turbulenzintensität in 100 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "turbulenzintensitaet_wind_100m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der mittleren Turbulenzintensität in 120 m Höhe über Grund. Die mittlere Turbulenzintensität beschreibt den Strömungszustand der Luft, der durch die Entstehung und den Zerfall von Wirbeln gekennzeichnet ist. Sie wird in Prozent angegeben und bezieht sich immer auf die mittlere Windgeschwindigkeit am Standort.",
+              "name" : "Mittlere Turbulenzintensität in 120 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "turbulenzintensitaet_wind_120m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der mittleren Turbulenzintensität in 140 m Höhe über Grund. Die mittlere Turbulenzintensität beschreibt den Strömungszustand der Luft, der durch die Entstehung und den Zerfall von Wirbeln gekennzeichnet ist. Sie wird in Prozent angegeben und bezieht sich immer auf die mittlere Windgeschwindigkeit am Standort.",
+              "name" : "Mittlere Turbulenzintensität in 140 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "turbulenzintensitaet_wind_140m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der mittleren Turbulenzintensität in 160 m Höhe über Grund. Die mittlere Turbulenzintensität beschreibt den Strömungszustand der Luft, der durch die Entstehung und den Zerfall von Wirbeln gekennzeichnet ist. Sie wird in Prozent angegeben und bezieht sich immer auf die mittlere Windgeschwindigkeit am Standort.",
+              "name" : "Mittlere Turbulenzintensität in 160 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "turbulenzintensitaet_wind_160m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der mittleren Turbulenzintensität in 180 m Höhe über Grund. Die mittlere Turbulenzintensität beschreibt den Strömungszustand der Luft, der durch die Entstehung und den Zerfall von Wirbeln gekennzeichnet ist. Sie wird in Prozent angegeben und bezieht sich immer auf die mittlere Windgeschwindigkeit am Standort.",
+              "name" : "Mittlere Turbulenzintensität in 180 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "turbulenzintensitaet_wind_180m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Karte der mittleren Turbulenzintensität in 200 m Höhe über Grund. Die mittlere Turbulenzintensität beschreibt den Strömungszustand der Luft, der durch die Entstehung und den Zerfall von Wirbeln gekennzeichnet ist. Sie wird in Prozent angegeben und bezieht sich immer auf die mittlere Windgeschwindigkeit am Standort.",
+              "name" : "Mittlere Turbulenzintensität in 200 m Höhe",
+              "showLegends" : true,
+              "subLayerID" : "turbulenzintensitaet_wind_200m",
+              "visibility" : false,
+              "serviceLayerID" : -1
+            }
+          ]
+        }
+      ],
+      "imageFormat" : "esriImagePNG"
+    }
+  ],
+  "binaryReferences" : [
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/3183405a7db15296623ccb77051bd368.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"de\">\r\n\t<Esri>\r\n\t\t<CreaDate>20230913</CreaDate>\r\n\t\t<CreaTime>17293400</CreaTime>\r\n\t\t<ArcGISFormat>1.0</ArcGISFormat>\r\n\t\t<SyncOnce>TRUE</SyncOnce>\r\n\t</Esri>\r\n</metadata>\r\n"
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2.1",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2",
+  "elevationSurfaceLayerDefinitions" : [
+    {
+      "type" : "CIMElevationSurfaceLayer",
+      "name" : "Boden",
+      "uRI" : "CIMPATH=karte/boden.json",
+      "useSourceMetadata" : true,
+      "description" : "Boden",
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : false,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "elevationMode" : "BaseGlobeSurface",
+      "verticalExaggeration" : 1,
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth"
+    }
+  ]
+}

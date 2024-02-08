@@ -1,0 +1,124 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "3.1.0",
+  "build" : 41833,
+  "layers" : [
+    "CIMPATH=karte/energie_atlas_bayern__windenergieanlagen.json"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMWMSLayer",
+      "name" : "Energie-Atlas Bayern: Windenergieanlagen",
+      "uRI" : "CIMPATH=karte/energie_atlas_bayern__windenergieanlagen.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "Windenergieanlagen (Groß- und Kleinwindanlagen) in Bayern mit Leistung in kW, die nach Erneuerbare-Energien-Gesetz (EEG) eine Strom-Einspeisevergütung erhalten.",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "elevationSurfaceLayerURI" : "CIMPATH=karte/boden.json"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "None",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "serviceConnection" : {
+        "type" : "CIMWMSServiceConnection",
+        "version" : "1.3.0",
+        "serverConnection" : {
+          "type" : "CIMProjectServerConnection",
+          "anonymous" : true,
+          "hideUserProperty" : true,
+          "url" : "https://www.lfu.bayern.de/gdi/wms/energieatlas/windenergieanlagen?",
+          "connectionMode" : "Consumer",
+          "serverType" : "WMS",
+          "useDefaultStagingFolder" : true
+        },
+        "capabilitiesParameters" : {
+          "type" : "PropertySet",
+          "propertySetItems" : [
+          ]
+        }
+      },
+      "subLayers" : [
+        {
+          "type" : "CIMServiceCompositeSubLayer",
+          "description" : "Windenergieanlagen (Groß- und Kleinwindanlagen) in Bayern mit Leistung in kW, die nach Erneuerbare-Energien-Gesetz (EEG) eine Strom-Einspeisevergütung erhalten.",
+          "expanded" : true,
+          "name" : "Layer",
+          "showLegends" : true,
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "subLayers" : [
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Standorte von Windenergieanlagen mit ihrer jeweiligen Leistung in kW. Es handelt sich dabei um Anlagen, die nach EEG eine finanzielle Förderung erhalten.",
+              "expanded" : true,
+              "name" : "Windenergieanlagen",
+              "showLegends" : true,
+              "subLayerID" : "windenergieanlagen",
+              "visibility" : true,
+              "serviceLayerID" : -1
+            },
+            {
+              "type" : "CIMWMSSubLayer",
+              "description" : "Eine Abgrenzung zwischen Klein- und Großwindanlagen bietet die DIN EN 61400-2 bei 200 m² überstrichener Rotorfläche. Bis zu dieser Grenze lassen sich Windenergieanlagen von ca. 70 kW realisieren.",
+              "expanded" : true,
+              "minScale" : 999997.99999949604,
+              "name" : "Kleinwindanlagen",
+              "showLegends" : true,
+              "subLayerID" : "kleinwindanlagen_zv04b14",
+              "visibility" : true,
+              "serviceLayerID" : -1
+            }
+          ]
+        }
+      ],
+      "imageFormat" : "esriImagePNG"
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2.1",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2",
+  "elevationSurfaceLayerDefinitions" : [
+    {
+      "type" : "CIMElevationSurfaceLayer",
+      "name" : "Boden",
+      "uRI" : "CIMPATH=karte/boden.json",
+      "useSourceMetadata" : true,
+      "description" : "Boden",
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : false,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "elevationMode" : "BaseGlobeSurface",
+      "verticalExaggeration" : 1,
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth"
+    }
+  ]
+}
